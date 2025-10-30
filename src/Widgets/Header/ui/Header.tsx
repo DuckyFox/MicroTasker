@@ -5,11 +5,11 @@ import { AuthNav } from '@/Entities/AuthNav';
 
 const Header = () => {
     return (
-        <div className="p-2 flex justify-between">
+        <div className="px-6 items-center flex justify-between h-[5vh] ">
             <Link href='/'>
                 Microtasks
             </Link>
-            <div className="flex">
+            <div className="flex gap-x-[20px]">
                 <Nav/>
                 <AuthNav/>
             </div>
