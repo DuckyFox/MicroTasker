@@ -12,6 +12,8 @@ const initialState: TasksState = {
             price: '120',
             authorId: '1',
             createdDate: '2025-10-25T09:30:00Z',
+            taskType: 'category1',
+            tags: ['tag2', 'tag4'],
         },
         {
             id: '2',
@@ -20,6 +22,8 @@ const initialState: TasksState = {
             price: '70',
             authorId: '3',
             createdDate: '2025-10-25T10:15:00Z',
+            taskType: 'category1',
+            tags: ['tag2'],
         },
         {
             id: '3',
@@ -28,6 +32,8 @@ const initialState: TasksState = {
             price: '90',
             authorId: '4',
             createdDate: '2025-10-26T08:40:00Z',
+            taskType: 'category1',
+            tags: ['tag4'],
         },
         {
             id: '4',
@@ -36,6 +42,8 @@ const initialState: TasksState = {
             price: '110',
             authorId: '2',
             createdDate: '2025-10-26T14:00:00Z',
+            taskType: 'category2',
+            tags: ['tag2', 'tag5'],
         },
         {
             id: '5',
@@ -44,6 +52,8 @@ const initialState: TasksState = {
             price: '50',
             authorId: '4',
             createdDate: '2025-10-27T12:25:00Z',
+            taskType: 'category2',
+            tags: ['tag5'],
         },
         {
             id: '6',
@@ -52,6 +62,8 @@ const initialState: TasksState = {
             price: '150',
             authorId: '1',
             createdDate: '2025-10-27T18:45:00Z',
+            taskType: 'category2',
+            tags: ['tag2'],
         },
         {
             id: '7',
@@ -60,6 +72,8 @@ const initialState: TasksState = {
             price: '80',
             authorId: '5',
             createdDate: '2025-10-28T07:20:00Z',
+            taskType: 'category2',
+            tags: [],
         },
         {
             id: '8',
@@ -68,6 +82,8 @@ const initialState: TasksState = {
             price: '130',
             authorId: '5',
             createdDate: '2025-10-28T15:00:00Z',
+            taskType: 'category3',
+            tags: [],
         },
         {
             id: '9',
@@ -76,6 +92,8 @@ const initialState: TasksState = {
             price: '95',
             authorId: '2',
             createdDate: '2025-10-29T09:10:00Z',
+            taskType: 'category3',
+            tags: ['tag2'],
         },
         {
             id: '10',
@@ -84,6 +102,8 @@ const initialState: TasksState = {
             price: '60',
             authorId: '3',
             createdDate: '2025-10-29T21:40:00Z',
+            taskType: 'category4',
+            tags: ['tag2'],
         },
     ],
 };
@@ -95,3 +115,6 @@ const tasksSlice = createSlice({
 
     },
 });
+
+export const selectTasks = (state: RootState) => state.tasks.tasks;
+export default tasksSlice.reducer;

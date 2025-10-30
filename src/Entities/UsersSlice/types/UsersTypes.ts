@@ -10,5 +10,5 @@ export interface UserData {
 }
 
 export interface UsersState {
-    Users: UserData[];
+    users: UserData[];
 }

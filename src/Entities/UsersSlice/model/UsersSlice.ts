@@ -1,10 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
-import type { PayloadAction } from '@reduxjs/toolkit';
 import type { RootState } from '@/App/store/stores';
+import type { PayloadAction } from '@reduxjs/toolkit';
 import type { UsersState } from '../types/UsersTypes';
 
 const initialState: UsersState = {
-    Users: [
+    users: [
         {
             id: '1',
             name: 'Alex',
@@ -55,3 +55,6 @@ const usersSlice = createSlice({
         
     },
 });
+
+export const selectUsers = (state: RootState) => state.users.users;
+export default usersSlice.reducer;
