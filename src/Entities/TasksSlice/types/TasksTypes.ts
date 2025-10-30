@@ -5,7 +5,7 @@ export interface TaskData {
     title: string;
     description: string;
     price: string;
-    author: UserData;
+    authorId: string;
     createdDate: string;
 }
 

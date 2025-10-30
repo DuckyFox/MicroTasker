@@ -5,10 +5,10 @@ export interface UserData {
     name?: string;
     secondName?: string;
     nickname: string;
-    AcceptedTasks: TaskData[];
-    PostedTasks: TaskData[];
+    AcceptedTasksId: string[];
+    PostedTasksId: string[];
 }
 
 export interface UsersState {
-    tasks: UserData[];
+    Users: UserData[];
 }
